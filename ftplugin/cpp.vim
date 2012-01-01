@@ -61,9 +61,9 @@ endfunction
 
 function! s:init_clang_complete()
   if exists('g:clang_complete_auto') && g:clang_complete_auto
-    inoremap <expr> <buffer> . <SID>complete_dot()
-    inoremap <expr> <buffer> > <SID>complete_arrow()
-    inoremap <expr> <buffer> : <SID>complete_colon()
+    inoremap <silent><expr> <buffer> . <SID>complete_dot()
+    inoremap <silent><expr> <buffer> > <SID>complete_arrow()
+    inoremap <silent><expr> <buffer> : <SID>complete_colon()
   endif
 endfunction
 
